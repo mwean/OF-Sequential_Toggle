@@ -4,18 +4,26 @@ By RobTrew
 
 Originally posted on the [OmniFocus forums][1]
 
-Adapted by Matthew Wean
+Adapted by Matthew Wean ([Blog][2], [Github][3])
 
-MattWean.com | github.com/mwean
+About
+-----
+Two AppleScripts to toggle a project or group between sequential and parallel:
 
+* Sequential_Toggle
+	- Switches between sequential and parallel with each activation of the script.
+* Show\_Hidden\_Tasks
+	- Switches to parallel and back to sequential, leaving all tasks visible, even when view settings are set to "available". This lets you see tasks blocked by other tasks while still hiding tasks blocked by future start dates.
+	
+In both cases, sub-projects will not be affected by toggling the parent project.
 
-An AppleScript to toggle a project or group between sequential and parallel. Sub-projects will not be affected by toggling the parent project.
-
-To use, move script to 
+To use, move script to:
 
 	~/Library/Scripts/Applications/OmniFocus
 
-and customize the OmniFocus toolbar to add a button for the script. Or, invoke using [FastScripts][2]
+and customize the OmniFocus toolbar to add a button for the script. Or, invoke using [FastScripts][4]
 
 [1]: http://forums.omnigroup.com/showthread.php?p=95563#post95563
-[2]: http://www.red-sweater.com/fastscripts/
+[2]: http://mattwean.com
+[3]: http://github.com/mwean
+[4]: http://www.red-sweater.com/fastscripts/
