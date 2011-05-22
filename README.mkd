@@ -1,0 +1,21 @@
+OmniFocus Sequential Toggle
+===========================
+By RobTrew
+
+Originally found on the [OmniFocus forums][1]
+
+Adapted by Matthew Wean
+MattWean.com
+github.com/mwean
+
+
+An AppleScript to toggle a project or group between sequential and parallel. Sub-projects will not be affected by toggling the parent project.
+
+To use, move script to 
+
+	~/Library/Scripts/Applications/OmniFocus
+
+and customize the OmniFocus toolbar to add a button for the script. Or, invoke using [FastScripts][2]
+
+[1]: http://forums.omnigroup.com/showthread.php?p=95563#post95563
+[2]: http://www.red-sweater.com/fastscripts/

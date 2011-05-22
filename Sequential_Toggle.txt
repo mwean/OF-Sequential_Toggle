@@ -1,0 +1,21 @@
+tell application id "OFOC"
+	tell front document window of front document
+		set refTrees to a reference to (selected trees of content where class of its value is task or class of its value is project)
+		if (count of refTrees) < 1 then set refTrees to a reference to (selected trees of sidebar where class of its value is project)
+	end tell
+	
+	tell (value of refTrees) as list
+		if (count) < 1 then return
+		tell first item
+			if (class ≠ project) and (count of its tasks) < 1 then
+				set oParent to container
+			else
+				set oParent to it
+			end if
+		end tell
+	end tell
+	
+	tell oParent
+		set sequential to not (sequential)
+	end tell
+end tell
